@@ -1,0 +1,49 @@
+
+/*video ad sponser*/
+ytd-player-legacy-desktop-watch-ads-renderer,
+#player-ads,
+/*home panels*/
+ytd-rich-item-renderer.ytd-rich-grid-renderer:has(> .ytd-rich-item-renderer > ytd-ad-slot-renderer),
+/*home top banner*/
+#masthead-ad,
+/* other ads */
+#mealbar-promo-renderer,
+yt-mealbar-promo-renderer,
+ytd-ad-slot-renderer,
+/* paid content overlay */
+.YtmPaindContentOverlayLink, 
+ytm-paid-content-overlay-renderer,
+.ytp-paid-content-overlay-link,
+/* brand watermark */
+.annotation-type-custom.iv-branding,
+/* shorts button */
+ytd-guide-entry-renderer:has(> [title="Shorts"]),
+ytd-mini-guide-entry-renderer[aria-label="Shorts"],
+/* shorts list */
+ytd-reel-shelf-renderer,
+/* short as video */
+ytd-video-renderer:has([overlay-style="SHORTS"]),
+/* download button */
+ytd-download-button-renderer,
+/* unavailable donations */
+#donation-shelf:has(>ytd-donation-unavailable-renderer)
+{
+    display: none !important;
+    /* outline: 2px solid green; */
+}
+
+/* big skip button */
+.ytp-skip-ad-button
+{
+    scale: 1.5;
+    transform: translateX(-10%);
+}
+
+ytd-rich-grid-renderer #contents {
+    & > ytd-rich-section-renderer {
+        display: none !important;
+    }
+    & > ytd-rich-item-renderer[rendered-from-rich-grid][is-in-first-column] {
+        margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important;
+    }
+}

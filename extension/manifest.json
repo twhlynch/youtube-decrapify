@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Decrapify",
+    "version": "1.0",
+    "description": "Various alterations to YouTube's CSS to make it less annoying.",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "css": ["style.css"]
+        }
+    ]
+}
