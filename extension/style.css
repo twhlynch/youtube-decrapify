@@ -4,6 +4,7 @@ ytd-player-legacy-desktop-watch-ads-renderer,
 #player-ads,
 /*home panels*/
 ytd-rich-item-renderer.ytd-rich-grid-renderer:has(> .ytd-rich-item-renderer > ytd-ad-slot-renderer),
+ytd-rich-item-renderer.ytd-rich-grid-renderer:has(> .ytd-rich-item-renderer > ytd-feed-nudge-renderer),
 /*home top banner*/
 #masthead-ad,
 /* other ads */
