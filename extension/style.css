@@ -33,11 +33,33 @@ ytd-download-button-renderer,
     /* outline: 2px solid green; */
 }
 
-/* big skip button */
+/* fullscreen skip ad button */
 .ytp-skip-ad-button
 {
-    scale: 1.5;
-    transform: translateX(-10%);
+    height: calc(100% - 50px) !important;
+    right: 0 !important;
+    bottom: 50px !important;
+    width: calc(100% - 50px) !important;
+    border-radius: 0 !important;
+    padding-right: 50px !important;
+
+    display: flex;
+    place-content: end;
+
+    scale: 1 !important;
+    transform: translateX(0) !important;
+
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+
+    background: #0005 !important;
+    opacity: 1 !important;
+    transition: background 0.2s !important;
+
+    &:hover {
+        background: #000b !important;
+        opacity: 1 !important;
+    }
 }
 
 ytd-rich-grid-renderer #contents {
