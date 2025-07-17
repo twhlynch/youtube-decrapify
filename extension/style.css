@@ -71,3 +71,8 @@ ytd-rich-grid-renderer #contents {
         margin-left: calc(var(--ytd-rich-grid-item-margin)/2) !important;
     }
 }
+
+/* fix broken style from prior changes */
+#info-section.ytd-channel-renderer {
+    flex-direction: column !important;
+}
